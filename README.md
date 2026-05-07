@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Dayyan Portfolio (Premium)
 
-## Getting Started
+Recruiter-grade portfolio built with:
 
-First, run the development server:
+- **Next.js (App Router)**
+- **Tailwind CSS**
+- **Framer Motion**
+- **Recharts** (interactive metrics)
+- **Markdown blog** (frontmatter + server rendering)
+
+## Quick start
+
+Install deps and start the dev server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## What to customize (most important)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Identity + links**: `data/site.ts`
+  - Update GitHub / LinkedIn / email
+  - Update your `metadataBase`, `sitemap.ts`, and `robots.ts` domain when you buy the domain
+- **Projects**: `data/projects.ts`
+  - Add real metrics (accuracy, latency, throughput) and links
+- **Blog posts (Markdown)**: `content/blog/*.md`
+  - Add new posts as `.md` files with frontmatter (`title`, `date`, `summary`, `tags`)
+- **Resume PDF**: place your file at `public/resume.pdf`
 
-## Learn More
+## Pages
 
-To learn more about Next.js, take a look at the following resources:
+- `/` Home
+- `/about`
+- `/projects` + `/projects/[slug]`
+- `/case-study/skin-health`
+- `/blog` + `/blog/[slug]`
+- `/resume` (includes “AI Resume Explainer”)
+- `/contact`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy (Vercel)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Push to GitHub.
+2. Import the repo into Vercel.
+3. Build command: `npm run build`
+4. Output: default (Next.js)
 
-## Deploy on Vercel
+Done — Vercel handles SSL + CDN automatically.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Notes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `npm run build` is currently clean.
+- If you want a real contact form (not mailto), we can add an API route + email provider later.
