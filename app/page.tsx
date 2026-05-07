@@ -227,9 +227,9 @@ export default async function Home() {
             </p>
           </FadeIn>
 
-          <div className="mt-12 grid grid-cols-1 gap-120 lg:mt-14 lg:grid-cols-12 lg:items-stretch lg:gap-170">
+          <div className="mt-12 grid grid-cols-1 gap-8 lg:mt-14 lg:grid-cols-12 lg:items-stretch lg:gap-10">
             <FadeIn delay={0.06}>
-              <section className="h-full w-120 rounded-3xl border border-white/10 bg-black/25 p-8 shadow-sm backdrop-blur-sm sm:p-9 lg:col-span-7 lg:p-10">
+              <section className="h-full w-full rounded-3xl border border-white/10 bg-black/25 p-8 shadow-sm backdrop-blur-sm sm:p-9 lg:col-span-7 lg:p-10">
                 <div className="mb-6">
                   <h2 className="text-lg font-semibold tracking-tight text-zinc-100">
                     Send a message
@@ -244,7 +244,7 @@ export default async function Home() {
             </FadeIn>
 
             <FadeIn delay={0.08}>
-              <aside className="h-full w-120 rounded-3xl border border-white/10 bg-black/25 p-8 shadow-sm backdrop-blur-sm sm:p-9 lg:col-span-5 lg:p-10">
+              <aside className="h-full w-full rounded-3xl border border-white/10 bg-black/25 p-8 shadow-sm backdrop-blur-sm sm:p-9 lg:col-span-5 lg:p-10">
                 <div className="text-sm font-semibold tracking-wide text-zinc-100">
                   Other ways to connect
                 </div>

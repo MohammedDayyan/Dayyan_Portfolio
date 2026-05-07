@@ -6,8 +6,8 @@ export const siteConfig = {
   url: "https://example.com",
   location: "India",
   links: {
-    github: "https://github.com/",
-    linkedin: "https://www.linkedin.com/",
+    github: "https://github.com/MohammedDayyan",
+    linkedin: "https://www.linkedin.com/in/dayyan-soherwardi/",
     email: "mailto:dayyan.soherwardi123@gmail.com",
     resumePdf: "/Dayyan_Resume.pdf",
   },
