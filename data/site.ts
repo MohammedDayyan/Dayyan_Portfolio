@@ -9,7 +9,7 @@ export const siteConfig = {
     github: "https://github.com/",
     linkedin: "https://www.linkedin.com/",
     email: "mailto:dayyan.soherwardi123@gmail.com",
-    resumePdf: "/resume/download",
+    resumePdf: "/Dayyan_Resume.pdf",
   },
 } as const;
 
